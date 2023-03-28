@@ -1,5 +1,7 @@
 let s = 0;
 
-for (s = 0; s <= 100; s++) {}
+for (let n = 0; n <= 100; n++) {
+  s += n;
+}
 
 console.log(s);
