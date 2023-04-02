@@ -12,7 +12,16 @@
 // 출력
 // {'Yujin': 70, 'Hyewon': 100}
 
-const a = { Yujin: 70 };
-const b = { Hyewon: 100 };
-const c = { a, b };
-console.log(c);
+const name = prompt("이름 ");
+const scores = prompt("점수 ");
+
+const nameArray = name.split(" ");
+const scoreArray = scores.split(" ");
+
+const scoreObj = {};
+
+for (let i = 0; i < nameArray.length; i++) {
+  scoreObj[nameArray[i]] = parseInt(scoreArray[i]);
+}
+
+console.log(scoreObj);
