@@ -24,7 +24,6 @@ function generateBigrams(str) {
   return bigrams;
 }
 
-// example usage:
 let str = "Javascript";
 let bigrams = generateBigrams(str);
 
