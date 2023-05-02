@@ -150,15 +150,19 @@ const students = [
 
 // 0. 학생들이 총 몇명이 있는지 출력해주세요.
 // console.log(students.length);
+
 // 1. 나이가 17살 미만인 학생만 출력해주세요.
 // const countStudent = students.filter((students) => students.age < 17);
 // console.log(countStudent);
+
 // 2. 2반인 학생들만 출력해주세요
 // const classStudent = students.filter((students) => students.class === 2);
 // console.log(classStudent);
+
 // 3. 성별이 "male"인 학생들만 출력해주세요
 // const genderStudent = students.filter((students) => students.gender == "male");
 // console.log(genderStudent);
+
 // 4. 각 학생들을 "제 이름은 @@@ 이고 나이는 @@ 입니다." 형식에 맞게 출력해주세요
 // const Allstudent = students.map((students) => {
 //   const message = `제 이름은 ${students.name}이고 나이는 ${students.age}입니다.`;
@@ -166,6 +170,7 @@ const students = [
 //   return message;
 // });
 // console.log(Allstudent);
+
 // 5. 각 학생들의 수학, 영어의 점수를 모두 더해주고 평균을 구해주세요 (수학 + 영어) / 학생 수
 const plusStudent = students.map((value) => {
   const sum = value.scores.math + value.scores.english;
@@ -176,6 +181,7 @@ plusStudent.forEach((v) => (temp = temp + v));
 const avg = temp / students.length;
 
 console.log(avg);
+
 // 6. 2반 학생들의 수학 점수의 평균을 구해주세요
 
 const selectClass2 = students.filter((value) => value.class === 2);
